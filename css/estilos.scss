@@ -211,6 +211,7 @@ body {
             color: $secunadrio;
             cursor: pointer;
             display: none;
+            margin-top: 16px;
             @media screen and (max-width: $movil) {
                 & {
                     display: block;

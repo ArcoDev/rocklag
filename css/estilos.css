@@ -133,6 +133,7 @@ body {
   color: #fff;
   cursor: pointer;
   display: none;
+  margin-top: 16px;
 }
 
 @media screen and (max-width: 767px) {
