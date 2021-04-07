@@ -1,4 +1,5 @@
 if (window.matchMedia("(min-width: 1024px)").matches) {
+    //alert("Hoal desde js");
     /* Animacio del navbar  */
     const nav = document.getElementById("nav");
     const contenido = document.getElementById("contenido");
@@ -18,10 +19,7 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
             nav.style.position = "fixed";
             nav.style.marginTop = "-20px";
             enlaces.style.marginTop = "20px";
-        } else if (
-            document.body.scrollTop < 1 ||
-            document.documentElement.scrollTop < 1
-        ) {
+        } else if (document.body.scrollTop < 1 || document.documentElement.scrollTop < 1) {
             nav.style.background = "transparent";
             nav.style.transition = "all .8s ease-in";
             nav.style.marginTop = "0";
@@ -40,6 +38,7 @@ function validar() {
     mensaje = document.getElementById("mensaje").value;
     error = document.getElementById("error");
     txtError = document.getElementById("txtError");
+
     expresionEmail = /\w+@\w+\.+[a-z]/;
 
     if (nombre === "" || apellido === "" || email === "" || asunto === "" || mensaje === "") {
@@ -70,14 +69,14 @@ function validar() {
             error.style.opacity = "0";
         }, 5000);
         return false;
-    } else if (asunto.length > 30) {
+    } else if (asunto.length > 60) {
         error.style.opacity = "1";
         txtError.innerHTML = "El asunto es demasiado largo";
         setTimeout(function() {
             error.style.opacity = "0";
         }, 5000);
         return false;
-    } else if (mensaje.length > 50) {
+    } else if (mensaje.length > 60) {
         error.style.opacity = "1";
         txtError.innerHTML = "EL mensaje es demasiado largo";
         setTimeout(function() {
@@ -102,5 +101,17 @@ addEventListener("DOMContentLoaded", () => {
 
 function remover() {
     const link = document.getElementById("enlaces");
-    link.classList.remove("show")
+    link.classList.remove("show");
 }
+
+/* Agregar clase active a los enlaces */
+addEventListener("DOMContentLoaded", () => {
+    let ul = document.querySelector("ul");
+    let a = document.querySelectorAll("a");
+    a.forEach(lista => {
+        lista.addEventListener("click", function() {
+            ul.querySelector(".active").classList.remove("active");
+            lista.classList.add("active");
+        });
+    });
+});

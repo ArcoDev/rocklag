@@ -16,7 +16,9 @@
 </head>
 
 <body>
+
     <header class="header">
+
         <div class="video">
             <video autoplay loop>
                 <source src="./assets/video/video.mp4" type="video/mp4">
@@ -31,7 +33,7 @@
                 </a>
                 <div class="items">
                     <ul id="enlaces" class="enlaces">
-                        <a onclick="return remover();" href="./index.html">
+                        <a class="active" onclick="return remover();" href="./index.html">
                             <li>Inicio</li>
                         </a>
                         <a onclick="return remover();" href="#nosotros">
@@ -49,13 +51,13 @@
             </nav>
             <div class="pieHeader">
                 <div class="correo">
-                    <a href="mailto:info@contacto.com">
+                    <a href="mailto:info@contacto.com" title="Correo">
                         <div class="iconCorreo"></div>
                         <p>info@contacto.com</p>
                     </a>
                 </div>
                 <div class="telefono">
-                    <a href="tel:8711458712">
+                    <a href="tel:8711458712" title="Teléfono">
                         <div class="iconTel"></div>
                         <p>87 11 45 87 12</p>
                     </a>
@@ -180,18 +182,18 @@
             </div>
             <div class="textos wow animate__animated animate__fadeInDown animate__delay-.8s">
                 <div class=" ubicacion ">
-                    <a href="# ">
+                    <a href="#" title="Ubicacion">
                         <div class="imgUbi "></div>
                         <p>Colonia #123 ote. Entre ejemplo y ejemplo, Torreon, Coahuila.</p>
                     </a>
                 </div>
-                <div class="tel ">
-                    <a href="tel:8711458712 ">
+                <div class="tel" title="Teléfono">
+                    <a href="tel:8711458712">
                         <div class="imgTel "></div>
                         <p>87 11 45 87 12</p>
                     </a>
                 </div>
-                <div class="email ">
+                <div class="email" title="Correo">
                     <a href="mailto:info@contacto.mx ">
                         <div class="imgEmail "></div>
                         <p>info@contacto.com</p>
