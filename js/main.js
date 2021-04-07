@@ -90,6 +90,7 @@ function validar() {
     }
 }
 
+/* Animacion para el menu en movil */
 addEventListener("DOMContentLoaded", () => {
     const menMov = document.getElementById("menMov");
     if (menMov) {
@@ -99,3 +100,8 @@ addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+function remover() {
+    const link = document.getElementById("enlaces");
+    link.classList.remove("show")
+}

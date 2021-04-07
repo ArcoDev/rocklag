@@ -31,16 +31,16 @@
                 </a>
                 <div class="items">
                     <ul id="enlaces" class="enlaces">
-                        <a href="./index.html">
+                        <a onclick="return remover();" href="./index.html">
                             <li>Inicio</li>
                         </a>
-                        <a href="#nosotros">
+                        <a onclick="return remover();" href="#nosotros">
                             <li>Quienes somos</li>
                         </a>
-                        <a href="#productos">
+                        <a onclick="return remover();" href="#productos">
                             <li>Productos</li>
                         </a>
-                        <a href="#contacto">
+                        <a onclick="return remover();" href="#contacto">
                             <li>Contacto</li>
                         </a>
                     </ul>
@@ -171,11 +171,7 @@
             <h2>Ponte en <span> contacto</span></h2>
             <p>!Escribenos! Nos pondremos en contacto en la brevedad posible</p>
         </div>
-        <div id="exito" class="alertas">
-            <div class="exito">
-                <i class="fas fa-check-circle"></i>
-                <p>Su mensaje se ha enviado correctamente, en brevedad nos pondremos en contacto contigo!</p>
-            </div>
+        <div class="alertas">
             <div id="error" class="error">
                 <i class="fas fa-exclamation-circle"></i>
                 <p id="txtError"></p>
