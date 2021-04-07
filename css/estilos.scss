@@ -50,10 +50,14 @@ $terciario: #292929;
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px solid $secunadrio;
+    transition: all .3s ease-out;
     @media screen and (max-width: $movil) {
         & {
             background-size: contain;
         }
+    }
+    &:hover {
+        transform: scale(1.04);
     }
 }
 
@@ -137,10 +141,10 @@ body {
         @media screen and (max-width: $movil) {
             & {
                 width: 100%;
-                background: $primario;
+                background: $terciario;
                 position: fixed;
                 justify-content: space-between;
-                padding: 15px;
+                padding: 0 15px 10px 15px;
                 margin-top: -20px;
             }
         }
@@ -167,12 +171,25 @@ body {
         .enlaces {
             display: flex;
             margin-top: 40px;
+            @media screen and (max-width: $movil) {
+                & {
+                    position: fixed;
+                    width: 100vw;
+                    height: calc(100% -65px);
+                    background: $terciario;
+                    top: -100vh;
+                    text-align: center;
+                    transition: all .4s;
+                    flex-direction: column;
+                }
+            }
             a {
                 color: $secunadrio;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 400;
                 margin-right: 30px;
-                transition: all .4s ease;
+                transition: all .4s ease-in-out;
+                text-transform: uppercase;
                 &:hover {
                     font-weight: 700;
                 }
@@ -188,18 +205,6 @@ body {
                     }
                 }
             }
-            @media screen and (max-width: $movil) {
-                & {
-                    position: fixed;
-                    width: 100vw;
-                    height: calc(100% -65px);
-                    background: $primario;
-                    top: -100vh;
-                    text-align: center;
-                    transition: all .4s;
-                    flex-direction: column;
-                }
-            }
         }
         .menMov {
             font-size: 2rem;
@@ -213,7 +218,7 @@ body {
             }
         }
         ul.show {
-            top: 50px;
+            top: 38px;
             width: 100%;
             left: 0;
             height: 100vh;
@@ -268,7 +273,6 @@ body {
             color: $secunadrio;
             font-size: 20px;
             font-weight: 400;
-            letter-spacing: 3px;
             @media screen and (max-width: $movil) {
                 & {
                     font-size: 15px
@@ -311,7 +315,7 @@ body {
     }
 }
 
-.overlay {
+.capa {
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -319,7 +323,7 @@ body {
     left: 0;
     background: $primario;
     z-index: 1;
-    opacity: .50;
+    opacity: .60;
 }
 
 .contenido {
@@ -747,13 +751,13 @@ body {
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
-            padding: 70px 0 0 50px;
+            padding: 65px 0 70px 10px;
             @media screen and (max-width: $movil) {
                 & {
-                    padding: 50px 20px 0 20px;
+                    padding: 40px 20px 0 20px;
                     width: 100%;
-                    align-items: center;
-                    justify-content: center;
+                    align-items: flex-start;
+                    justify-content: flex-start;
                 }
             }
             @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
@@ -765,29 +769,38 @@ body {
             .ubicacion a,
             .tel a,
             .email a {
-                width: 100%;
+                width: 90%;
                 display: flex;
                 align-items: center;
+                text-align: justify;
                 margin-bottom: 20px;
                 color: $secunadrio;
+                transition: all .4s ease-in-out;
                 @media screen and (max-width: $movil) {
                     & {
+                        width: 100%;
                         margin-bottom: 0;
                     }
                 }
                 @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
                     & {
-                        margin-bottom: 10px
+                        margin-bottom: 10px;
                     }
+                }
+                &:hover {
+                    border-bottom: 1px solid $secunadrio
                 }
             }
             .imgUbi {
                 @include sizeIcons();
                 background-image: url("../assets/icons/location.png");
-                margin-right: 10px;
+                width: 40px;
+                height: 40px;
+                margin-right: 14px;
                 @media screen and (max-width: $movil) {
                     & {
-                        margin-left: 20px
+                        width: 25px;
+                        height: 25px;
                     }
                 }
             }

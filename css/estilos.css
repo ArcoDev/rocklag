@@ -53,10 +53,10 @@ body {
 @media screen and (max-width: 767px) {
   .contenido .navegacion {
     width: 100%;
-    background: #000;
+    background: #292929;
     position: fixed;
     justify-content: space-between;
-    padding: 15px;
+    padding: 0 15px 10px 15px;
     margin-top: -20px;
   }
 }
@@ -89,12 +89,26 @@ body {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .contenido .navegacion .enlaces {
+    position: fixed;
+    width: 100vw;
+    height: calc(100% -65px);
+    background: #292929;
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+  }
+}
+
 .contenido .navegacion .enlaces a {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   margin-right: 30px;
-  transition: all .4s ease;
+  transition: all .4s ease-in-out;
+  text-transform: uppercase;
 }
 
 .contenido .navegacion .enlaces a:hover {
@@ -114,19 +128,6 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .contenido .navegacion .enlaces {
-    position: fixed;
-    width: 100vw;
-    height: calc(100% -65px);
-    background: #000;
-    top: -100vh;
-    text-align: center;
-    transition: all .4s;
-    flex-direction: column;
-  }
-}
-
 .contenido .navegacion .menMov {
   font-size: 2rem;
   color: #fff;
@@ -141,7 +142,7 @@ body {
 }
 
 .contenido .navegacion ul.show {
-  top: 50px;
+  top: 38px;
   width: 100%;
   left: 0;
   height: 100vh;
@@ -210,7 +211,6 @@ body {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 3px;
 }
 
 @media screen and (max-width: 767px) {
@@ -286,7 +286,7 @@ body {
   min-height: 100%;
 }
 
-.overlay {
+.capa {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -294,7 +294,7 @@ body {
   left: 0;
   background: #000;
   z-index: 1;
-  opacity: .50;
+  opacity: .60;
 }
 
 .contenido {
@@ -570,6 +570,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img1.png");
 }
 
@@ -579,6 +580,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat1:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat2 {
   width: 90%;
   height: 200px;
@@ -586,6 +591,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img2.png");
 }
 
@@ -595,6 +601,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat2:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat3 {
   width: 90%;
   height: 200px;
@@ -602,6 +612,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img3.png");
 }
 
@@ -611,6 +622,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat3:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat4 {
   width: 90%;
   height: 200px;
@@ -618,6 +633,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img4.png");
 }
 
@@ -627,6 +643,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat4:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat5 {
   width: 90%;
   height: 200px;
@@ -634,6 +654,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img5.png");
 }
 
@@ -643,6 +664,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat5:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat6 {
   width: 90%;
   height: 200px;
@@ -650,6 +675,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img6.png");
 }
 
@@ -659,6 +685,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat6:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat7 {
   width: 90%;
   height: 200px;
@@ -666,6 +696,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img7.png");
 }
 
@@ -675,6 +706,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat7:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat8 {
   width: 90%;
   height: 200px;
@@ -682,6 +717,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img8.png");
 }
 
@@ -691,6 +727,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat8:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat9 {
   width: 90%;
   height: 200px;
@@ -698,6 +738,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img9.png");
 }
 
@@ -707,6 +748,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat9:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat10 {
   width: 90%;
   height: 200px;
@@ -714,6 +759,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img10.png");
 }
 
@@ -723,6 +769,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat10:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat11 {
   width: 90%;
   height: 200px;
@@ -730,6 +780,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img11.png");
 }
 
@@ -739,6 +790,10 @@ body {
   }
 }
 
+.productos .catalogo .contenedorCat .imgCat11:hover {
+  transform: scale(1.04);
+}
+
 .productos .catalogo .contenedorCat .imgCat12 {
   width: 90%;
   height: 200px;
@@ -746,6 +801,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border: 1px solid #fff;
+  transition: all .3s ease-out;
   background-image: url("../assets/img/img12.png");
 }
 
@@ -753,6 +809,10 @@ body {
   .productos .catalogo .contenedorCat .imgCat12 {
     background-size: contain;
   }
+}
+
+.productos .catalogo .contenedorCat .imgCat12:hover {
+  transform: scale(1.04);
 }
 
 .productos .catalogo .contenedorCat h3 {
@@ -1011,15 +1071,15 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 70px 0 0 50px;
+  padding: 65px 0 70px 10px;
 }
 
 @media screen and (max-width: 767px) {
   .formulario .datos .textos {
-    padding: 50px 20px 0 20px;
+    padding: 40px 20px 0 20px;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 
@@ -1033,17 +1093,20 @@ body {
 .formulario .datos .textos .ubicacion a,
 .formulario .datos .textos .tel a,
 .formulario .datos .textos .email a {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
+  text-align: justify;
   margin-bottom: 20px;
   color: #fff;
+  transition: all .4s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
   .formulario .datos .textos .ubicacion a,
   .formulario .datos .textos .tel a,
   .formulario .datos .textos .email a {
+    width: 100%;
     margin-bottom: 0;
   }
 }
@@ -1056,6 +1119,12 @@ body {
   }
 }
 
+.formulario .datos .textos .ubicacion a:hover,
+.formulario .datos .textos .tel a:hover,
+.formulario .datos .textos .email a:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .formulario .datos .textos .imgUbi {
   width: 30px;
   height: 30px;
@@ -1063,7 +1132,9 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../assets/icons/location.png");
-  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  margin-right: 14px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1075,7 +1146,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .formulario .datos .textos .imgUbi {
-    margin-left: 20px;
+    width: 25px;
+    height: 25px;
   }
 }
 

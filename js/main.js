@@ -1,5 +1,4 @@
 if (window.matchMedia("(min-width: 1024px)").matches) {
-    //alert("Hoal desde js");
     /* Animacio del navbar  */
     const nav = document.getElementById("nav");
     const contenido = document.getElementById("contenido");
