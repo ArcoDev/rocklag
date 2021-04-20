@@ -20,10 +20,13 @@
     <header class="header">
 
         <div class="video">
-            <video autoplay loop>
+            <video autoplay muted loop>
                 <source src="./assets/video/video.mp4" type="video/mp4">
-                <source src="./assets/video/video.mp4"" type=" video/ogg"> Your browser does not support the video tag.
-                    </video> </div>
+                <source src="./assets/video/video.mp4"" type=" video/ogg">
+                <source src="./assets/video/video.mp4"  type="video/wav"> 
+                Your browser does not support the video tag.
+            </video>
+        </div>
         <div class="capa">
         </div>
         <div id="contenido" class="contenido">
@@ -37,7 +40,7 @@
                             <li>Inicio</li>
                         </a>
                         <a onclick="return remover();" href="#nosotros">
-                            <li>Quiénes somos</li>
+                            <li>Nosotros</li>
                         </a>
                         <a onclick="return remover();" href="#productos">
                             <li>Productos</li>
@@ -70,8 +73,6 @@
     <section id="nosotros" class="nosotros">
         <div class="imgContenedor wow animate__animated animate__fadeInRight animate__delay-.8s">
             <div class="img1 imgNosotros wow slideInLeft"></div>
-            <div class="img2 imgNosotros wow slideInLeft"></div>
-            <div class="img3 imgNosotros wow slideInLeft"></div>
         </div>
         <div class="txtContenedor wow animate__animated animate__fadeInDown animate__delay-.8s">
             <div class="titulo">
@@ -87,7 +88,7 @@
     <section id="productos" class="productos">
         <div class="titulo wow animate__animated animate__fadeInDown animate__delay-.8s">
             <h2>Nuestros <span> productos</span></h2>
-            <p>Conoce algunos de nustros productos</p>
+            <p>Conoce algunos de nuestros productos</p>
         </div>
         <div class="catalogo wow animate__animated animate__fadeInRight animate__delay-.8s">
             <div class="contenedorCat">
@@ -152,16 +153,16 @@
             </div>
         </div>
         <div class="pdfDescarga wow animate__animated animate__fadeInDown animate__delay-.8s">
-            <a download="#" title="Desarga nuestro catálogo">
+            <a download="#" title="Descarga nuestro catálogo">
                 <div class="imgPDF"></div>
-                <p>!Desarga nuestro catálogo!</p>
+                <p>¡Descarga nuestro catálogo!</p>
             </a>
         </div>
     </section>
     <section id="contacto" class="formulario">
         <div class="titulo wow animate__animated animate__fadeInDown animate__delay-.8s">
             <h2>Ponte en <span> contacto</span></h2>
-            <p>!Escribenos! Nos pondremos en contacto en la brevedad posible</p>
+            <p>¡Escríbenos! Nos pondremos en contacto a la brevedad</p>
         </div>
         <div class="alertas">
             <div id="error" class="error">
@@ -181,12 +182,6 @@
                 </form>
             </div>
             <div class="textos wow animate__animated animate__fadeInDown animate__delay-.8s">
-                <div class=" ubicacion ">
-                    <a href="#" title="Ubicacion">
-                        <div class="imgUbi "></div>
-                        <p>Colonia #123 ote. Entre ejemplo y ejemplo, Torreon, Coahuila.</p>
-                    </a>
-                </div>
                 <div class="tel" title="Teléfono">
                     <a href="tel:8711458712">
                         <div class="imgTel "></div>
@@ -197,6 +192,11 @@
                     <a href="mailto:info@contacto.mx ">
                         <div class="imgEmail "></div>
                         <p>info@contacto.com</p>
+                    </a>
+                </div>
+                <div class=" ubicacion ">
+                    <a href="#" title="Instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </div>
             </div>

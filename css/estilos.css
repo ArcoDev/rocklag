@@ -1,7 +1,6 @@
 /*Fuente Nato*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 /*variables*/
-/*Mixin tamano y backgroun de los icons*/
 /*Adaptacion a dispositivos*/
 /*Globales*/
 * {
@@ -22,6 +21,18 @@ body {
   scroll-behavior: smooth;
 }
 
+/*Estilos de la barra de scroll*/
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0d0f14;
+  border-right: 2px solid #0d0f14;
+}
+
+/*Mixin tamano y backgroun de los icons*/
 /*Header*/
 .header {
   width: 100%;
@@ -345,6 +356,29 @@ body {
   }
 }
 
+.nosotros .imgNosotros {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/img/nosotros.png");
+}
+
+@media screen and (max-width: 767px) {
+  .nosotros .imgNosotros {
+    width: 100%;
+    height: 850px;
+    background-image: url("../assets/img/nosotros-mov.png");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nosotros .imgNosotros {
+    background-size: contain;
+  }
+}
+
 .nosotros .txtContenedor {
   width: 60%;
   display: flex;
@@ -429,72 +463,6 @@ body {
 @media screen and (max-width: 767px) {
   .nosotros .txtContenedor .descripcion animate__fadeInUp p {
     padding-left: 0;
-  }
-}
-
-.nosotros .img1 {
-  width: 33.3%;
-  height: 400px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../assets/img/img10.png");
-}
-
-@media screen and (max-width: 767px) {
-  .nosotros .img1 {
-    width: 100%;
-    height: 250px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nosotros .img1 {
-    background-size: contain;
-  }
-}
-
-.nosotros .img2 {
-  width: 33.3%;
-  height: 400px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../assets/img/img4.png");
-}
-
-@media screen and (max-width: 767px) {
-  .nosotros .img2 {
-    width: 100%;
-    height: 250px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nosotros .img2 {
-    background-size: contain;
-  }
-}
-
-.nosotros .img3 {
-  width: 33.3%;
-  height: 400px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../assets/img/img6.png");
-}
-
-@media screen and (max-width: 767px) {
-  .nosotros .img3 {
-    width: 100%;
-    height: 250px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .nosotros .img3 {
-    background-size: contain;
   }
 }
 
@@ -1126,10 +1094,19 @@ body {
   }
 }
 
-.formulario .datos .textos .ubicacion a:hover,
-.formulario .datos .textos .tel a:hover,
-.formulario .datos .textos .email a:hover {
-  border-bottom: 1px solid #fff;
+.formulario .datos .textos .ubicacion a i,
+.formulario .datos .textos .tel a i,
+.formulario .datos .textos .email a i {
+  font-size: 35px;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .formulario .datos .textos .ubicacion a i,
+  .formulario .datos .textos .tel a i,
+  .formulario .datos .textos .email a i {
+    font-size: 25px;
+  }
 }
 
 .formulario .datos .textos .imgUbi {
@@ -1202,19 +1179,13 @@ body {
 }
 
 .footer h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 .footer h2 a span {
   color: #fff;
   font-weight: 700;
-}
-
-@media screen and (max-width: 767px) {
-  .footer h2 {
-    font-size: 16px;
-  }
 }
 
 /*Pagina de Gracias*/

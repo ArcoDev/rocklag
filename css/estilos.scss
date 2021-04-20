@@ -8,6 +8,46 @@ $primario: #000;
 $secunadrio: #fff;
 $terciario: #292929;
 
+/*Adaptacion a dispositivos*/
+
+$movil: 767px;
+$tabletH: 768px;
+$tabletV: 1024px;
+
+/*Globales*/
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: $secunadrio;
+    overflow-x: hidden;
+    background: $primario;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+
+/*Estilos de la barra de scroll*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #0d0f14;
+    border-right: 2px solid #0d0f14;
+}
+
+
 /*Mixin tamano y backgroun de los icons*/
 
 @mixin sizeIcons {
@@ -20,25 +60,6 @@ $terciario: #292929;
         & {
             width: 20px;
             height: 20px;
-        }
-    }
-}
-
-@mixin imgNosotros {
-    width: 33.3%;
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    @media screen and (max-width: $movil) {
-        & {
-            width: 100%;
-            height: 250px;
-        }
-    }
-    @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
-        & {
-            background-size: contain;
         }
     }
 }
@@ -84,33 +105,6 @@ $terciario: #292929;
             font-size: 1rem;
         }
     }
-}
-
-
-/*Adaptacion a dispositivos*/
-
-$movil: 767px;
-$tabletH: 768px;
-$tabletV: 1024px;
-
-/*Globales*/
-
-* {
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-    color: $secunadrio;
-    overflow-x: hidden;
-    background: $primario;
-    outline: none;
-    scroll-behavior: smooth;
 }
 
 
@@ -369,6 +363,26 @@ body {
             }
         }
     }
+    .imgNosotros {
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../assets/img/nosotros.png");
+        @media screen and (max-width: $movil) {
+            & {
+                width: 100%;
+                height: 850px;
+                background-image: url("../assets/img/nosotros-mov.png");
+            }
+        }
+        @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
+            & {
+                background-size: contain;
+            }
+        }
+    }
     .txtContenedor {
         width: 60%;
         display: flex;
@@ -441,18 +455,6 @@ body {
                 }
             }
         }
-    }
-    .img1 {
-        @include imgNosotros();
-        background-image: url("../assets/img/img10.png");
-    }
-    .img2 {
-        @include imgNosotros();
-        background-image: url("../assets/img/img4.png");
-    }
-    .img3 {
-        @include imgNosotros();
-        background-image: url("../assets/img/img6.png");
     }
 }
 
@@ -793,8 +795,14 @@ body {
                         margin-bottom: 10px;
                     }
                 }
-                &:hover {
-                    border-bottom: 1px solid $secunadrio
+                i {
+                    font-size: 35px;
+                    color: $secunadrio;
+                    @media screen and (max-width: $movil) {
+                        & {
+                            font-size: 25px
+                        }
+                    }
                 }
             }
             .imgUbi {
@@ -832,16 +840,11 @@ body {
     align-items: center;
     justify-content: center;
     h2 {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
         a span {
             color: $secunadrio;
             font-weight: 700;
-        }
-        @media screen and (max-width: $movil) {
-            & {
-                font-size: 16px;
-            }
         }
     }
 }
