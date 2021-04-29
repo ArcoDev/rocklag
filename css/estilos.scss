@@ -444,10 +444,9 @@ body::-webkit-scrollbar-thumb {
                     width: 90%;
                 }
             }
-            animate__fadeInUp p {
+            p {
                 padding-left: 10px;
                 font-size: 18px;
-                text-align: justify;
                 @media screen and (max-width: $movil) {
                     & {
                         padding-left: 0
@@ -506,51 +505,47 @@ body::-webkit-scrollbar-thumb {
             }
             .imgCat1 {
                 @include imgCat();
-                background-image: url("../assets/img/img1.png");
+                background-image: url("../assets/img/amarilloverona.png");
             }
             .imgCat2 {
                 @include imgCat();
-                background-image: url("../assets/img/img2.png");
+                background-image: url("../assets/img/blancococo.png");
             }
             .imgCat3 {
                 @include imgCat();
-                background-image: url("../assets/img/img3.png");
+                background-image: url("../assets/img/blancomexicano.png");
             }
             .imgCat4 {
                 @include imgCat();
-                background-image: url("../assets/img/img4.png");
+                background-image: url("../assets/img/cafeoscuro.png");
             }
             .imgCat5 {
                 @include imgCat();
-                background-image: url("../assets/img/img5.png");
+                background-image: url("../assets/img/calcitaamarilla.png");
             }
             .imgCat6 {
                 @include imgCat();
-                background-image: url("../assets/img/img6.png");
+                background-image: url("../assets/img/calcitacafe.png");
             }
             .imgCat7 {
                 @include imgCat();
-                background-image: url("../assets/img/img7.png");
+                background-image: url("../assets/img/Champagne.png");
             }
             .imgCat8 {
                 @include imgCat();
-                background-image: url("../assets/img/img8.png");
+                background-image: url("../assets/img/Geoda.png");
             }
             .imgCat9 {
                 @include imgCat();
-                background-image: url("../assets/img/img9.png");
+                background-image: url("../assets/img/persiancream.png");
             }
             .imgCat10 {
                 @include imgCat();
-                background-image: url("../assets/img/img10.png");
+                background-image: url("../assets/img/pirita.png");
             }
             .imgCat11 {
                 @include imgCat();
-                background-image: url("../assets/img/img11.png");
-            }
-            .imgCat12 {
-                @include imgCat();
-                background-image: url("../assets/img/img12.png");
+                background-image: url("../assets/img/Rojoalicante.png");
             }
             h3 {
                 margin: 10px 0 0 0;
@@ -610,6 +605,64 @@ body::-webkit-scrollbar-thumb {
                     font-size: 14px;
                 }
             }
+        }
+    }
+}
+
+
+/* Galeria */
+
+.galeria {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+    .titulo {
+        h2 {
+            @include titulosSecciones();
+        }
+    }
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 150px;
+        padding: 20px 50px;
+        grid-gap: 8px;
+        @media screen and(max-width: $movil) {
+            & {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 10px;
+            }
+        }
+        @media screen and(min-width: 768px) {
+            .contenedor {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 10px;
+            }
+        }
+        .galeria-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all .4s ease-in;
+            &:hover {
+                transform: scale(1.01);
+            }
+        }
+        .caja-img {
+            grid-row-start: span 2;
+        }
+        .caja-img:nth-child(2) {
+            grid-row-start: span 3;
+            grid-column-start: span 2;
+        }
+        .caja-img:nth-child(4) {
+            grid-column-start: span 2;
+            grid-row-start: span 3;
         }
     }
 }
