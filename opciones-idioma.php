@@ -8,13 +8,13 @@
     }
     switch ($lang) {
         case 'en':
-            include("lenguaje/en.php");
+            include("language/en.php");
             break;
         case 'es':
-            include("lenguaje/es.php");
+            include("language/es.php");
             break;
         default:
-        include("lenguaje/es.php");
+        include("language/es.php");
             break;
     }
 ?>

@@ -204,6 +204,23 @@ body::-webkit-scrollbar-thumb {
                 }
             }
         }
+        .lenguaje {
+            position: absolute;
+            z-index: 10;
+            right: 1%;
+            top: 1%;
+            @media screen and(max-width: $movil) {
+                & {
+                    right: 3%;
+                    top: 75%;
+                }
+            }
+            a {
+                font-size: 23px;
+                margin-right: 5px;
+                font-weight: bold;
+            }
+        }
         a.active {
             font-weight: bold;
         }
