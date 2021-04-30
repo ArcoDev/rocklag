@@ -38,6 +38,7 @@
                     <ul id="enlaces" class="enlaces">
                         <a class="active" onclick="return remover();" href="./index.html">
                             <li>Inicio</li>
+
                         </a>
                         <a onclick="return remover();" href="#nosotros">
                             <li>Nosotros</li>
@@ -53,6 +54,11 @@
                         </a>
                     </ul>
                     <i id="menMov" class="fas fa-bars menMov"></i>
+                </div>
+                <div class="lenguaje">
+                    <button>ES</button>
+                    <button>EN</button>
+
                 </div>
             </nav>
             <div class="pieHeader">
@@ -84,7 +90,7 @@
             <div class="descripcion">
                 <p>Somos una empresa ubicada en el norte de méxico dedicada al ramo de los agregados, los cuales pueden ser utilizados para revestimientos de terrazo, mezcladas con granulometrias y colores diversos que pueden aplicarse en cualquier tipo
                     de superficie horizontal o vertical.</p>
-                <p>Es ampliamente utilizada en edificios modernos en todo el mundo y tiene como principales ventajas su durabilidad, resistencia al agua y abrasion y su facíl mantenimiento, siedo comunmente aplicado en piso de casas, residenciales, aeropuertos,
+                <p>Es ampliamente utilizada en edificios modernos en todo el mundo y tiene como principales ventajas su durabilidad, resistencia al agua y abrasion y su facíl mantenimiento, siendo comunmente aplicado en piso de casas, residenciales, aeropuertos,
                     escuelas, edificios de gobierno y centros comerciales.</p>
             </div>
         </div>
@@ -141,13 +147,78 @@
                 <h3>Rojo Caliente</h3>
             </div>
         </div>
-        <div class="pdfDescarga wow animate__animated animate__fadeInDown animate__delay-.8s">
-            <a download="#" title="Descarga nuestro catálogo">
-                <div class="imgPDF"></div>
-                <p>¡Descarga nuestro catálogo!</p>
-            </a>
+        <div class="titulo wow animate__animated animate__fadeInDown animate__delay-.8s" style="margin-top: 30px;">
+            <h2>Size Standards</h2>
+        </div>
+        <div class="caja-info">
+            <!-- Tabla size -->
+            <div class="tabla">
+                <table class="tabla-size">
+                    <tr>
+                        <th>Size</th>
+                        <th>Passing</th>
+                        <th>Retained</th>
+                    </tr>
+                    <tr>
+                        <td>No. -30</td>
+                        <td>30 mesh</td>
+                        <td>Pan</td>
+                    </tr>
+                    <tr>
+                        <td>No. 12-30</td>
+                        <td>12 mesh</td>
+                        <td>30 mesh</td>
+                    </tr>
+                    <tr>
+                        <td>No. 00</td>
+                        <td>1/16"</td>
+                        <td>Pan</td>
+                    </tr>
+                    <tr>
+                        <td>No. 0</td>
+                        <td>1/8</td>
+                        <td>1/16"</td>
+                    </tr>
+                    <tr>
+                        <td>No. 1(A)</td>
+                        <td>1/4"</td>
+                        <td>1/8"</td>
+                    </tr>
+                    <tr>
+                        <td>No. 2</td>
+                        <td>3/8"</td>
+                        <td>1/4"</td>
+                    </tr>
+                    <tr>
+                        <td>No. 2-3(B)</td>
+                        <td>1/2"</td>
+                        <td>1/4"</td>
+                    </tr>
+                    <tr>
+                        <td>No. 3-5</td>
+                        <td>3/4"</td>
+                        <td>3/8"</td>
+                    </tr>
+                    <tr>
+                        <td>No. 4-7 (C)</td>
+                        <td>1"</td>
+                        <td>1/2"</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- PDF -->
+            <div class="pdfDescarga wow animate__animated animate__fadeInDown animate__delay-.8s">
+                <a download="#" title="Descarga nuestro catálogo">
+                    <div class="img-pdf">
+                        <div class="pdf"></div>
+                        <p>¡Descarga nuestro catálogo!</p>
+                    </div>
+
+                </a>
+            </div>
         </div>
     </section>
+
     <!-- Galeria -->
     <section id="galeria" class="galeria">
         <div class="titulo wow animate__animated animate__fadeInDown animate__delay-.8s">
@@ -155,28 +226,28 @@
         </div>
         <div class="contenedor">
             <div class="caja-img">
-                <img lazy="loading" src="assets/img/gal1.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.8s">
+                <img lazy="loading" src="assets/img/gal1.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.9s">
             </div>
             <div class="caja-img">
-                <img lazy="loading" src="assets/img/gal2.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.8s">
+                <img lazy="loading" src="assets/img/gal2.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.9s">
             </div>
             <div class="caja-img">
-                <img lazy="loading" src="assets/img/gal3.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.8s">
+                <img lazy="loading" src="assets/img/gal3.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.9s">
             </div>
             <div class="caja-img">
-                <img lazy="loading" src="assets/img/gal4.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.8s">
+                <img lazy="loading" src="assets/img/gal4.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.9s">
             </div>
             <div class="caja-img">
-                <img lazy="loading" src="assets/img/gal5.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.8s">
+                <img lazy="loading" src="assets/img/gal5.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.9s">
             </div>
             <div class="caja-img">
-                <img lazy="loading" src="assets/img/gal6.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.8s">
+                <img lazy="loading" src="assets/img/gal6.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.9s">
             </div>
             <div class="caja-img">
-                <img lazy="loading" src="assets/img/gal7.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.8s">
+                <img lazy="loading" src="assets/img/gal7.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.9s">
             </div>
             <div class="caja-img">
-                <img lazy="loading" src="assets/img/gal8.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.8s">
+                <img lazy="loading" src="assets/img/gal8.jpg" alt="" class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.9s">
             </div>
         </div>
     </section>
@@ -228,6 +299,7 @@
         <h2>Desarrollado por <a href="https://awsoftware.mx/ "><span>A W Software</span></a> </h2>
     </footer>
     <!--Script personales -->
+    <script src="./js/jquery.min.js"></script>
     <script src="./js/main.js "></script>
     <script src="./js/queryWow.js "></script>
     <script src="./js/wow.js "></script>
