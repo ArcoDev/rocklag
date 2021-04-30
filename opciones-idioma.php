@@ -13,8 +13,5 @@
         case 'es':
             include("language/es.php");
             break;
-        default:
-        include("language/es.php");
-            break;
     }
 ?>
