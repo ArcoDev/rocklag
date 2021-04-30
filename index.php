@@ -68,9 +68,9 @@
             </nav>
             <div class="pieHeader">
                 <div class="correo">
-                    <a href="mailto:info@contacto.com" title="Correo">
+                    <a href="mailto:info@rocklag.com" title="Correo">
                         <div class="iconCorreo"></div>
-                        <p>info@contacto.com</p>
+                        <p>info@rocklag.com</p>
                     </a>
                 </div>
                 <div class="telefono">
@@ -290,9 +290,9 @@
                     </a>
                 </div>
                 <div class="email" title="Correo">
-                    <a href="mailto:info@contacto.mx ">
+                    <a href="mailto:info@rocklag.mx ">
                         <div class="imgEmail "></div>
-                        <p>info@contacto.com</p>
+                        <p>info@rocklag.com</p>
                     </a>
                 </div>
                 <div class=" ubicacion ">
