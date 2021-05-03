@@ -148,6 +148,10 @@
                 <div class="imgCat11"></div>
                 <h3>Rojo Caliente</h3>
             </div>
+            <div class="contenedorCat">
+                <div class="imgCat12"></div>
+                <h3>Negro Solido</h3>
+            </div>
         </div>
         <div class="titulo wow animate__animated animate__fadeInDown animate__delay-.8s" style="margin-top: 30px;">
             <h2><?= $titulo_size?></h2>

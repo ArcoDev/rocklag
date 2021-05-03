@@ -570,6 +570,10 @@ body::-webkit-scrollbar-thumb {
                 @include imgCat();
                 background-image: url("../assets/img/Rojoalicante.png");
             }
+            .imgCat12 {
+                @include imgCat();
+                background-image: url("../assets/img/negrosolido.png");
+            }
             h3 {
                 margin: 10px 0 0 0;
                 font-size: 20px;
