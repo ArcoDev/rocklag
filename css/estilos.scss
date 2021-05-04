@@ -168,6 +168,7 @@ body::-webkit-scrollbar-thumb {
         .enlaces {
             display: flex;
             margin-top: 40px;
+            z-index: 10;
             @media screen and (max-width: $movil) {
                 & {
                     position: fixed;
@@ -785,7 +786,11 @@ body::-webkit-scrollbar-thumb {
                 width: 97%;
             }
         }
-        .error {
+        @mixin alertas {
+            position: fixed;
+            top: 15%;
+            right: 1%;
+            width: 35%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -793,9 +798,14 @@ body::-webkit-scrollbar-thumb {
             background-color: #f2dede;
             border-color: #ebccd1;
             border-radius: 10px;
-            margin-top: -20px;
             transition: all 2s ease-out;
             opacity: 0;
+            @media screen and (max-width: $movil) {
+                & {
+                    right: 0%;
+                    width: 100%;
+                }
+            }
             i {
                 font-size: 1.5rem;
                 margin-right: 10px;
@@ -806,17 +816,30 @@ body::-webkit-scrollbar-thumb {
                     }
                 }
             }
-            p {
-                font-size: 16px;
+            h6 {
+                font-size: 14px;
                 text-transform: uppercase;
                 font-weight: 700;
                 letter-spacing: 3px;
+                margin-top: 30px;
+                text-align: center;
                 @media screen and (max-width: $movil) {
                     & {
-                        font-size: 12px
+                        letter-spacing: 0;
+                        font-size: 12px;
+                        margin-left: 10px
                     }
                 }
             }
+        }
+        .error {
+            @include alertas();
+        }
+        .exito {
+            @include alertas();
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
         }
     }
     .titulo {

@@ -29,14 +29,15 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
     }
 }
 /* Validacion de formulario */
-function validar() {
-    var nombre, apellido, email, asunto, mensaje, expresionEmail, error, txtError;
+$('#enviar').click(function() {
+    var nombre, apellido, email, asunto, mensaje, expresionEmail, error, exito, txtError;
     nombre = document.getElementById("nombre").value;
     apellido = document.getElementById("apellido").value;
     email = document.getElementById("email").value;
     asunto = document.getElementById("asunto").value;
     mensaje = document.getElementById("mensaje").value;
     error = document.getElementById("error");
+    exito = document.getElementById("exito");
     txtError = document.getElementById("txtError");
 
     expresionEmail = /\w+@\w+\.+[a-z]/;
@@ -84,9 +85,19 @@ function validar() {
         }, 5000);
         return false;
     } else {
-        txtError.innerHTML = "";
+        $.ajax({
+            url: 'email.php',
+            type: 'POST',
+            data: $('#enviar-correo').serialize(),
+            success: function() {
+                exito.style.opacity = "1";
+                setTimeout(function() {
+                    exito.style.opacity = "0";
+                }, 4000);
+            }
+        });
     }
-}
+});
 
 /* Animacion para el menu en movil */
 addEventListener("DOMContentLoaded", () => {

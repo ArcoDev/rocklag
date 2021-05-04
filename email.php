@@ -1,5 +1,5 @@
 <?php
-$correoDestino = "cacosta@awsoftware.mx, info@rocklag.com";
+$correoDestino = "cacosta@awsoftware.mx";
 $nombre = $_POST["nombre"];
 $apellido = $_POST["apellido"];
 $email = $_POST["email"];
@@ -13,4 +13,3 @@ $contenido = "Nombre: " .$nombre.
 "\nMensaje: " .$mensaje;
 
 mail($correoDestino, "Han enviado un mensaje de contacto desde tu sitio web.", $contenido);
-header("Location:./gracias.html");

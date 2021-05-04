@@ -42,7 +42,7 @@
                 </a>
                 <div class="items">
                     <ul id="enlaces" class="enlaces">
-                        <a class="active" onclick="return remover();" href="./index.html">
+                        <a class="active" onclick="return remover();" href="./index.php">
                             <li><?= $inicio?></li>
                         </a>
                         <a onclick="return remover();" href="#nosotros">
@@ -216,7 +216,7 @@
             </div>
             <!-- PDF -->
             <div class="pdfDescarga wow animate__animated animate__fadeInDown animate__delay-.8s">
-                <a href ="assets/download/Productos.pdf" target="_blank" title="<?= $subtitulo?>">
+                <a href="assets/download/Productos.pdf" target="_blank" title="<?= $subtitulo?>">
                     <div class="img-pdf">
                         <div class="pdf"></div>
                         <p><?= $descarga ?></p>
@@ -289,16 +289,20 @@
                 <i class="fas fa-exclamation-circle"></i>
                 <p id="txtError"></p>
             </div>
+            <div id="exito" class="exito">
+                <i class="far fa-check-circle"></i>
+                <h6 id="msjAlerta">Se ha enviado correctamente tu mensaje.</h6>
+            </div>
         </div>
         <div class="datos">
             <div class="form">
-                <form action="./assets/includes/email.php" method="POST" onsubmit="return validar();">
+                <form id = "enviar-correo" method = "POST">
                     <input type="text" autocomplete="off" name="nombre" id="nombre" placeholder="<?= $nombre?>">
                     <input type="text" autocomplete="off" name="apellido" id="apellido" placeholder="<?= $apellido?>">
                     <input type="email" autocomplete="off" name="email" id="email" placeholder="<?= $email?>">
                     <input type="text" autocomplete="off" name="asunto" id="asunto" placeholder="<?= $asunto?>">
                     <input type="text" autocomplete="off" name="mensaje" id="mensaje" placeholder="<?= $mensaje?>">
-                    <button type="submit"><?= $btn_contacto ?></button>
+                    <button type="button" id = "enviar"><?= $btn_contacto ?></button>
                 </form>
             </div>
             <div class="textos wow animate__animated animate__fadeInDown animate__delay-.8s">
