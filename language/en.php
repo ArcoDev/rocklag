@@ -5,6 +5,9 @@
   $productos = "Products";
   $galeria = "Gallery";
   $contacto = "Contact";
+  
+  //TEXTO AGREGADOS
+  $agregados = "Aggregates for terrazo";
 
   //TEXTOS NOSOTROS
   $sobre_nosotros = "About us";
@@ -23,6 +26,7 @@
 
  //TEXTO GALERIA 
  $galeria = "Gallery";
+ $proyecto = "Projects in which our product was applied";
 
  //TEXTOS CONTACTO
  $titulo_contacto = "Get in <span>contact</span>";

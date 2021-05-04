@@ -5,7 +5,10 @@
   $productos = "Productos";
   $galeria = "Galería";
   $contacto = "Contacto";
-
+  
+  //TEXTO AGREGADOS
+  $agregados = "Agregados para terrazo";
+  
   //TEXTOS NOSOTROS
   $sobre_nosotros = "Sobre Nosotros";
   $descripcion = "Somos una empresa ubicada en el norte de méxico dedicada al ramo de los agregados, los cuales pueden ser utilizados para revestimientos de terrazo, mezcladas con granulometrias y colores diversos que pueden aplicarse en cualquier tipo de superficie horizontal o vertical. <br> <br> Es ampliamente utilizada en edificios modernos en todo el mundo y tiene como principales ventajas su durabilidad, resistencia al agua y abrasion y su facíl mantenimiento, siendo comunmente aplicado en piso de casas, residenciales, aeropuertos, escuelas, edificios de gobierno y centros comerciales.";
@@ -23,6 +26,8 @@
 
   //TEXTO GALERIA 
   $galeria = "Galería";
+  $proyecto = "Proyectos en los que se aplicó nuestro producto";
+
 
   //TEXTOS CONTACTO
   $titulo_contacto = "Ponte en <span>contacto</span>";

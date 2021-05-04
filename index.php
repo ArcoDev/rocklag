@@ -26,7 +26,7 @@
     <header class="header">
 
         <div class="video">
-            <video autoplay muted loop>
+            <video autoplay muted loop playsinline>
                 <source src="./assets/video/video.mp4" type="video/mp4">
                 <source src="./assets/video/video.mp4"" type=" video/ogg"> <source src="./assets/video/video.mp4"
                     type="video/wav">
@@ -66,6 +66,8 @@
                 </div>
 
             </nav>
+            <div class="txt-agregados"><?= $agregados ?></div>
+
             <div class="pieHeader">
                 <div class="correo">
                     <a href="mailto:info@rocklag.com" title="Correo">
@@ -227,7 +229,8 @@
     <!-- Galeria -->
     <section id="galeria" class="galeria">
         <div class="titulo wow animate__animated animate__fadeInDown animate__delay-.8s">
-            <h2><?= $galeria?></h2>
+            <h2><?= $galeria ?></h2>
+            <p><?= $proyecto ?></p>
         </div>
         <div class="contenedor">
             <div class="caja-img">
@@ -260,7 +263,19 @@
             </div>
             <div class="caja-img">
                 <img lazy="loading" src="assets/img/gal8.jpg" alt=""
-                    class="galeria-img wow animate__animated animate__fadeInLeftBig animate__delay-.9s">
+                    class="galeria-img wow animate__animated animate__fadeInRightBig animate__delay-.9s">
+            </div>
+            <div class="caja-img">
+                <img lazy="loading" src="assets/img/gal9.jpeg" alt=""
+                    class="galeria-img wow animate__animated animate__fadeInRightBig animate__delay-.9s">
+            </div>
+            <div class="caja-img">
+                <img lazy="loading" src="assets/img/gal10.jpeg" alt=""
+                    class="galeria-img wow animate__animated animate__fadeInRightBig animate__delay-.9s">
+            </div>
+            <div class="caja-img">
+                <img lazy="loading" src="assets/img/gal11.jpeg" alt=""
+                    class="galeria-img wow animate__animated animate__fadeInRightBig animate__delay-.9s">
             </div>
         </div>
     </section>
