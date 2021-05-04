@@ -194,7 +194,7 @@ body::-webkit-scrollbar-thumb {
                 }
                 @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
                     & {
-                        font-size: 20px;
+                        font-size: 16px;
                     }
                 }
                 @media screen and (max-width: $movil) {
@@ -217,6 +217,13 @@ body::-webkit-scrollbar-thumb {
                 & {
                     right: 3%;
                     top: 75%;
+                    flex-direction: unset;
+                }
+            }
+            @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
+                & {
+                    top: 0;
+                    right: 5%;
                     flex-direction: unset;
                 }
             }
@@ -254,6 +261,11 @@ body::-webkit-scrollbar-thumb {
         top: 17%;
         color: $secunadrio;
         font-weight: bold;
+        @media screen and(max-width: $movil) {
+            & {
+                left: 24%;
+            }
+        }
     }
     .pieHeader {
         position: absolute;
@@ -431,6 +443,7 @@ body::-webkit-scrollbar-thumb {
             & {
                 width: 90%;
                 margin-top: 0;
+                flex-wrap: wrap;
             }
         }
         .titulo {
@@ -445,7 +458,7 @@ body::-webkit-scrollbar-thumb {
             }
             @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
                 & {
-                    width: 70%;
+                    width: 100%;
                 }
             }
             h2 {
@@ -471,6 +484,11 @@ body::-webkit-scrollbar-thumb {
         .descripcion {
             width: 50%;
             @media screen and (max-width: $movil) {
+                & {
+                    width: 90%;
+                }
+            }
+            @media screen and (min-width: $tabletH) and (max-width: $tabletV) {
                 & {
                     width: 90%;
                 }
