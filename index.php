@@ -214,7 +214,7 @@
             </div>
             <!-- PDF -->
             <div class="pdfDescarga wow animate__animated animate__fadeInDown animate__delay-.8s">
-                <a download="#" title="<?= $subtitulo?>">
+                <a href ="assets/download/Productos.pdf" target="_blank" title="<?= $subtitulo?>">
                     <div class="img-pdf">
                         <div class="pdf"></div>
                         <p><?= $descarga ?></p>
